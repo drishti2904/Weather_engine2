@@ -33,7 +33,9 @@ const useChartStyling = () => {
 
 
 /////////////////////////////////////
-const API_BASE = import.meta.env.VITE_API_BASE_URL;
+// FIX: Changed this to a hard-coded relative path. 
+// It will correctly resolve to /api on the deployed server.
+const API_BASE = '/api';
 
 
 const LaycanStatus = ({ status, eta, riskHours, laycanWindow }) => {
